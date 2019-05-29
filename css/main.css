@@ -1,0 +1,31 @@
+@import url('normalize.css');
+@import url('fonts.css');
+@import url('header.css');
+@import url('shop.css');
+@import url('instagram.css');
+@import url('footer.css');
+
+
+*, *::after, *::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'PN', 'Arial', sans-serif;
+	font-size: 16px;
+	color: #111;
+	overflow-wrap: break-word;
+}
+
+.container {
+	max-width: 1500px;
+	min-width: 290px;
+	margin: 0 auto;
+	padding: 0 15px;
+}

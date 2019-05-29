@@ -1,0 +1,78 @@
+.instagram {
+	background: #111 url('../img/inst.jpg') center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 3;
+}
+
+.instagram::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	background-color: #222;
+	z-index: -3;
+}
+
+.instagram_main {
+	padding: 24% 0px;
+}
+
+.instagram_title {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 54px;
+	line-height: 1.2;
+	letter-spacing: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.instagram_text {
+	text-align: center;
+}
+
+.instagram_link {
+	display: inline-block;
+	font-size: 30px;
+	letter-spacing: 8px;
+	color: #f84545;
+	font-weight: 900;
+	text-decoration: none;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	text-transform: uppercase;
+}
+
+.instagram_link:hover {
+	letter-spacing: 18px;
+}
+
+@media (max-width: 1050px) {
+	.instagram_title {
+		font-size: 42px;
+		letter-spacing: 20px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.instagram_main {
+		padding: 40% 0px;
+	}
+	.instagram_title {
+		letter-spacing: 5px;
+		font-size: 32px;
+	}
+	.instagram_link {
+		font-size: 20px;
+		letter-spacing: 3px;
+	}
+	.instagram_link:hover {
+		letter-spacing: 10px;
+	}
+}
